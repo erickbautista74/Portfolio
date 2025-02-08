@@ -3,6 +3,7 @@
 ---
 # [Project 1: Blood Donor](https://github.com/erickbautista74/Blood_Donor/blob/main/Machine_Learning_with_PySpark.ipynb) 
 ---
+[See code](https://github.com/erickbautista74/Blood_Donor/blob/main/Machine_Learning_with_PySpark.ipynb) 
 This is a project I did to Predict if a patient is Hep or not based parameter.
 The data set contains laboratory values of blood donors and Hepatitis C patients and demographic values like age.
 
@@ -26,6 +27,7 @@ The data set contains laboratory values of blood donors and Hepatitis C patients
 ---
 # [Project 2: Sentiment Analysis on X](https://github.com/erickbautista74/UCM-Twitter/blob/main/axb12940UCMTwitter.ipynb) 
 ---
+[See code](https://github.com/erickbautista74/UCM-Twitter/blob/main/axb12940UCMTwitter.ipynb) 
 This is a project I did for Sentiment Analysis on X (Twitter)
 The data was get from X through their API. (Sentiment analysis with data from twitter:)
 
