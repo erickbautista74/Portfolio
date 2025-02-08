@@ -23,4 +23,3 @@ The data set contains laboratory values of blood donors and Hepatitis C patients
 ### Heatmap
 ![](images/blood_donor_heatmap.png)
 
-test
