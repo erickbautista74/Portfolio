@@ -38,6 +38,6 @@ The data was get from X through their API. (Sentiment analysis with data from tw
 ### Sentiment Analysis for word: "UCM"
 ![](images/Twitter_keyword_UCM.png)
 ### Positive Sentiment  for word: "UCM"
-![](images/Twitter_positive_sentiment)
+![](images/Twitter_positive_sentiment.png)
 ### Negative Sentiment for word: "UCM"
 ![](images/Twitter_negative_sentiment.png)
