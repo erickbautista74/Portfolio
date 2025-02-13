@@ -5,7 +5,7 @@
 ---
 [See code](https://github.com/erickbautista74/Blood_Donor/blob/main/Machine_Learning_with_PySpark.ipynb).<br> 
 This is a project I did to Predict if a patient is Hep or not based parameter.<br>
-The data set contains laboratory values of blood donors and Hepatitis C patients and demographic values like age.
+Dataset contains laboratory values of blood donors and Hepatitis C patients and demographic values like age.
 
 ### WorkFlow
 - Data Prep
@@ -29,7 +29,7 @@ The data set contains laboratory values of blood donors and Hepatitis C patients
 ---
 [See code](https://github.com/erickbautista74/UCM-Twitter/blob/main/axb12940UCMTwitter.ipynb).<br>
 This is a project I did for Sentiment Analysis on X (Twitter).<br>
-The data was get from X through their API. (Sentiment analysis with data from twitter:)
+Data was get from X through their API. (Sentiment analysis with data from twitter:)
 
 ### WorkFlow
 - Preparation: textblob, tweepy, pycountry, wordcloud, langdetect
@@ -43,3 +43,29 @@ The data was get from X through their API. (Sentiment analysis with data from tw
 ![](images/Twitter_positive_sentiment.png)
 ### Negative Sentiment for word: "UCM"
 ![](images/Twitter_negative_sentiment.png)
+
+---
+# [Project 3: Data Engineering in GCP]
+---
+
+This is a project I did for ETL in Google Clousd Platform.<br>
+Data was a dummy created with Python.
+
+### WorkFlow
+- Project Design: Draw.io
+- Data Generation: Python code
+- ETL: GCP Enviroment, Instance, Data Fusion, Pipeline, Big Query
+- Data Visualization: Looker
+
+### Design
+![](images/GCP-ETL.drawio.png)
+### GCP Composer
+![](images/GCP_Composer.png)
+### GCP Instances
+![](images/GCP_Instances.png)
+### GCP Data Fusion Pipeline
+![](images/GCP_Data_Fusion.png)
+### GCP Big Query
+![](images/GCP_BigQuery.png)
+### GCP Looker
+![](images/GCP_Looker.png)
