@@ -123,9 +123,8 @@ print("F1Score",lr_metric.fMeasure(1.0))
 ![](images/blood_donor_heatmap.png)
 &nbsp;
 ---
-## Project 3: Sentiment Analysis on X (Data Science)
+# Project 3: Sentiment Analysis on X (Data Science)
 ---
-[See code](https://github.com/erickbautista74/UCM-Twitter/blob/main/axb12940UCMTwitter.ipynb).<br>
 This is a project I did for Sentiment Analysis on X (Twitter).<br>
 Data was get from X through their API. (Sentiment analysis with data from twitter:)
 
@@ -135,6 +134,34 @@ Data was get from X through their API. (Sentiment analysis with data from twitte
 - Getting Tweets With Keyword or Hashtag
 - Extracting text values
 
+### Google Colab code snippet: Authentication for Twitter API
+```python
+auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
+auth.set_access_token(accessToken, accessTokenSecret)
+api = tweepy.API(auth)
+```
+### Google Colab code snippet: Getting Tweets With Keyword or Hashtag
+```python
+for tweet in tweets:
+    
+    #print(tweet.text)
+    tweet_list.append(tweet.text)
+    analysis = TextBlob(tweet.text)
+    score = SentimentIntensityAnalyzer().polarity_scores(tweet.text)
+    neg = score['neg']
+    neu = score['neu']
+    pos = score['pos']
+    comp = score['compound']
+    polarity += analysis.sentiment.polarity
+```
+### Google Colab code snippet: Creating new data frames for all sentiments (positive, negative and neutral)
+```python
+tw_list_negative = tw_list[tw_list["sentiment"]=="negative"]
+tw_list_positive = tw_list[tw_list["sentiment"]=="positive"]
+tw_list_neutral = tw_list[tw_list["sentiment"]=="neutral"]
+```
+[View Full Code on GitHub](https://github.com/erickbautista74/UCM-Twitter/blob/main/axb12940UCMTwitter.ipynb)
+&nbsp;
 ### Sentiment Analysis for word: "UCM"
 ![](images/Twitter_keyword_UCM.png)
 ### Positive Sentiment  for word: "UCM"
@@ -143,18 +170,18 @@ Data was get from X through their API. (Sentiment analysis with data from twitte
 ![](images/Twitter_negative_sentiment.png)
 
 ---
-## Project 4: Data Visualization with Tableau
+# Project 4: Data Visualization with Tableau
 ---
-- Sales Analisis in the USA. [see on Public Tableau](https://public.tableau.com/shared/BDRS2R2TM?:display_count=n&:origin=viz_share_link)
+### 1. Sales Analisis in the USA. [see on Public Tableau](https://public.tableau.com/shared/BDRS2R2TM?:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_sales_USA.png)
 
-- Analysis of Sales and Profitability in EU. [see on Public Tableau](https://public.tableau.com/views/BautistaAXB12940-Final/Q6AXB12940Story?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+### 2. Analysis of Sales and Profitability in EU. [see on Public Tableau](https://public.tableau.com/views/BautistaAXB12940-Final/Q6AXB12940Story?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_Sales_EU.png)
 
-- Customer Segmentation in the UK. [see on Public Tableau](https://public.tableau.com/views/CustomerSegmentationUK_17389682375610/Story1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+### 3. Customer Segmentation in the UK. [see on Public Tableau](https://public.tableau.com/views/CustomerSegmentationUK_17389682375610/Story1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_Cust_segm_UK.png)
 
-- World Tertiary Education, STEM vs non STEM. [see on Public Tableau](https://public.tableau.com/shared/DSP866RS6?:display_count=n&:origin=viz_share_link)
+### 4. World Tertiary Education, STEM vs non STEM. [see on Public Tableau](https://public.tableau.com/shared/DSP866RS6?:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_Tertiary_Edu.png)
 
 
