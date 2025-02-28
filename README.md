@@ -5,11 +5,45 @@
 This is a project I did for ETL in Google Clousd Platform.<br>
 Data was a dummy created with Python.
 
-### WorkFlow
+## Technologies Used
+- Python
+- SQL (BigQuery)
+- Google Data Fusion
+- Looker
+
+
+## WorkFlow
 - Project Design: Draw.io
 - Data Generation: Python code
 - ETL: GCP Enviroment, Instance, Data Fusion, Pipeline, Big Query
 - Data Visualization: Looker
+
+## Code Snippet: Data Loading
+```python
+import csv
+from faker import Faker
+import pandas as pd
+import random
+from datetime import datetime, timedelta
+import string
+from tqdm import tqdm
+
+fake = Faker()
+
+
+def sanitize_text(text):
+    """Removes newlines, extra spaces, and ensures proper formatting."""
+    return text.replace('\n', ' ').replace('\r', ' ').replace(',', ' ').strip()
+
+
+def generate_employee_data(num_employees=1000):
+    with open("cleaned_employee_data.csv", "w", newline="", encoding="utf-8") as csvfile:
+        fieldnames = [
+            "employee_id", "first_name", "last_name", "email", "phone_number", "address", "birthdate", 
+            "hire_date", "job_title", "department", "salary", "password"
+        ]
+```
+[🔗**View Full Code on GitHub**](https://github.com/erickbautista74/GCP_ETL/blob/main/2_src/2.1_ingestion/extract.py)<br> 
 
 ### Design
 ![](images/GCP-ETL.drawio.png)
