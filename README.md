@@ -1,35 +1,29 @@
 # Erick Bautista - Portfolio
 ---
-## Project 1: Data Engineering (GCP)
+# Project 1: Data Engineering (GCP)
 ---
 This is a project I did for ETL in Google Clousd Platform.<br>
 Data was a dummy created with Python.
 
-## Technologies Used
-- Python
-- SQL (BigQuery)
-- Google Data Fusion
-- Looker
+### Technologies Used
+- Python, SQL (BigQuery), Google Data Fusion, Looker
 
-
-## WorkFlow
+### WorkFlow
 - Project Design: Draw.io
 - Data Generation: Python code
 - ETL: GCP Enviroment, Instance, Data Fusion, Pipeline, Big Query
 - Data Visualization: Looker
 
-## Code Snippet: Data Loading
+### Design
+![](images/GCP-ETL.drawio.png)
+
+### Python Code Snippet: Data Loading
 ```python
 import csv
 from faker import Faker
 import pandas as pd
-import random
-from datetime import datetime, timedelta
-import string
-from tqdm import tqdm
 
 fake = Faker()
-
 
 def sanitize_text(text):
     """Removes newlines, extra spaces, and ensures proper formatting."""
@@ -43,25 +37,28 @@ def generate_employee_data(num_employees=1000):
             "hire_date", "job_title", "department", "salary", "password"
         ]
 ```
-[**View Full Code on GitHub**](https://github.com/erickbautista74/GCP_ETL/blob/main/2_src/2.1_ingestion/extract.py)<br> 
+[View Full Code on GitHub](https://github.com/erickbautista74/GCP_ETL/blob/main/2_src/2.1_ingestion/extract.py)
+&nbsp;
 
-### Design
-![](images/GCP-ETL.drawio.png)
 ### GCP Composer
 ![](images/GCP_Composer.png)
+
 ### GCP Instances
 ![](images/GCP_Instances.png)
+&nbsp;
 ### GCP Data Fusion Pipeline
 ![](images/GCP_Data_Fusion.png)
+&nbsp;
 ### GCP Big Query
 ![](images/GCP_BigQuery.png)
+&nbsp;
 ### GCP Looker
 ![](images/GCP_Looker.png)
+&nbsp;
 
 ---
-## Project 2: Blood Donor (PySpark|Machine Learning)
+# Project 2: Blood Donor (PySpark|Machine Learning)
 ---
-[See code](https://github.com/erickbautista74/Blood_Donor/blob/main/Machine_Learning_with_PySpark.ipynb).<br> 
 This is a project I did to Predict if a patient is Hep or not based parameter.<br>
 Dataset contains laboratory values of blood donors and Hepatitis C patients and demographic values like age.
 
@@ -79,9 +76,52 @@ Dataset contains laboratory values of blood donors and Hepatitis C patients and 
 ### Technologies
 - Google Colab, PySpark, Machine Learning (Linear Regression), Pandas, Numpy, matplotlib, seaborn
 
+### Google Colab code snippet: Pyspark Session
+```python
+!pip install pyspark
+
+# Load our Pkgs
+from pyspark import SparkContext
+
+# Spark
+spark = SparkSession.builder.appName("MLwithSpark").getOrCreate()
+
+# Load our dataset
+df = spark.read.csv("/content/drive/MyDrive/Colab Notebooks/Data/hcvdata.csv",header=True,inferSchema=True)
+```
+### Google Colab code snippet: Logistic Model
+```python
+train_df,test_df = vec_df.randomSplit([0.7,0.3])
+from pyspark.ml.classification import LogisticRegression,DecisionTreeClassifier
+
+# Logist Model
+lr = LogisticRegression(featuresCol='features',labelCol='Target')
+lr_model = lr.fit(train_df)
+y_pred = lr_model.transform(test_df)
+y_pred.show()
+y_pred.select('target','rawPrediction', 'probability', 'prediction').show()
+```
+### Google Colab code snippet: Model Evaluation
+```python
+from pyspark.ml.evaluation import MulticlassClassificationEvaluator
+
+# How to Check For Accuracy
+multi_evaluator = MulticlassClassificationEvaluator(labelCol='Target',metricName='accuracy')
+multi_evaluator.evaluate(y_pred)
+from pyspark.mllib.evaluation import MulticlassMetrics
+lr_metric = MulticlassMetrics(y_pred['target', 'prediction'].rdd)
+
+print("Accuracy",lr_metric.accuracy)
+print("Precision",lr_metric.precision(1.0))
+print("Recall",lr_metric.recall(1.0))
+print("F1Score",lr_metric.fMeasure(1.0))
+```
+[View Full Code on GitHub](https://github.com/erickbautista74/Blood_Donor/blob/main/Machine_Learning_with_PySpark.ipynb)
+&nbsp;
+
 ### Heatmap
 ![](images/blood_donor_heatmap.png)
-
+&nbsp;
 ---
 ## Project 3: Sentiment Analysis on X (Data Science)
 ---
