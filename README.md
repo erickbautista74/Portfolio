@@ -80,7 +80,7 @@ Data was get from X through their API. (Sentiment analysis with data from twitte
 - Customer Segmentation in the UK. [see on Public Tableau](https://public.tableau.com/views/CustomerSegmentationUK_17389682375610/Story1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_Cust_segm_UK.png)
 
-- World Tertiary Education, STEM vs non STEM. [see on Public Tableau](https://public.tableau.com/shared/ZSPCCNG54?:display_count=n&:origin=viz_share_link)
+- World Tertiary Education, STEM vs non STEM. [see on Public Tableau](https://public.tableau.com/shared/DSP866RS6?:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_Tertiary_Edu.png)
 
 
