@@ -43,7 +43,7 @@ def generate_employee_data(num_employees=1000):
             "hire_date", "job_title", "department", "salary", "password"
         ]
 ```
-[🔗**View Full Code on GitHub**](https://github.com/erickbautista74/GCP_ETL/blob/main/2_src/2.1_ingestion/extract.py)<br> 
+[**View Full Code on GitHub**](https://github.com/erickbautista74/GCP_ETL/blob/main/2_src/2.1_ingestion/extract.py)<br> 
 
 ### Design
 ![](images/GCP-ETL.drawio.png)
