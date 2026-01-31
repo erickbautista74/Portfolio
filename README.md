@@ -22,13 +22,16 @@ Technologies: Tableau, SQL, Excel.
 ### 4. World Tertiary Education, STEM vs non STEM. [see on Public Tableau](https://public.tableau.com/shared/DSP866RS6?:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_Tertiary_Edu.png)
 ---
-# Project 1: Data Engineering (GCP)
+# Project 2: Data Pipeline & Analytics on GCP
 ---
-This is a project I did for ETL in Google Clousd Platform.<br>
-Data was a dummy created with Python.
+Built an end-to-end analytics pipeline on Google Cloud to generate, transform, and load data into BigQuery and support reporting and analysis.
 
-### Technologies Used
-- Python, SQL (BigQuery), Google Data Fusion, Looker
+• Generated synthetic data using Python.  
+• Built ETL pipelines using Google Data Fusion.  
+• Loaded data into BigQuery and performed SQL queries.  
+• Created dashboards in Looker for reporting.
+
+Technologies: Python, SQL (BigQuery), Google Data Fusion, Looker.
 
 ### WorkFlow
 - Project Design: Draw.io
@@ -79,10 +82,15 @@ def generate_employee_data(num_employees=1000):
 &nbsp;
 
 ---
-# Project 2: Blood Donor (PySpark|Machine Learning)
+# Project 3: Predictive Analytics with PySpark
 ---
-This is a project I did to Predict if a patient is Hep or not based parameter.<br>
-Dataset contains laboratory values of blood donors and Hepatitis C patients and demographic values like age.
+Performed data preparation and built a predictive analytics model using PySpark to identify patterns in laboratory data.
+
+• Cleaned and transformed data.  
+• Performed feature engineering.  
+• Built and evaluated a predictive model.
+
+Technologies: PySpark, Python, Machine Learning (Linear Regression), Pandas, NumPy, Matplotlib.
 
 ### WorkFlow
 - Data Prep
@@ -94,9 +102,6 @@ Dataset contains laboratory values of blood donors and Hepatitis C patients and 
 - Numberical Values
 - Vectorization
 - Scaling
-
-### Technologies
-- Google Colab, PySpark, Machine Learning (Linear Regression), Pandas, Numpy, matplotlib, seaborn
 
 ### Google Colab code snippet: Pyspark Session
 ```python
@@ -145,10 +150,15 @@ print("F1Score",lr_metric.fMeasure(1.0))
 ![](images/blood_donor_heatmap.png)
 &nbsp;
 ---
-# Project 3: Sentiment Analysis on X (Data Science)
+# Project 4: Text Analytics & Sentiment Analysis
 ---
-This is a project I did for Sentiment Analysis on X (Twitter).<br>
-Data was get from X through their API. (Sentiment analysis with data from twitter:)
+Collected social media data using APIs and performed text analytics and sentiment analysis to identify trends.
+
+• Extracted and cleaned text data.  
+• Classified sentiment as positive, negative, or neutral.  
+• Visualized results.
+
+Technologies: Python, Tweepy, TextBlob, Pandas, Matplotlib.
 
 ### WorkFlow
 - Preparation: textblob, tweepy, pycountry, wordcloud, langdetect
