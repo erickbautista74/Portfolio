@@ -1,5 +1,27 @@
 # Erick Bautista - Portfolio
 ---
+# Project 1: Data Analytics & Business Intelligence Portfolio
+---
+Developed interactive Tableau dashboards to analyze sales, profitability, and customer segmentation across multiple regions.
+
+• Built dashboards for sales analysis in the USA and EU.  
+• Created visualizations to analyze customer segmentation in the UK.  
+• Designed charts and maps to highlight trends and performance.  
+
+Technologies: Tableau, SQL, Excel.
+
+### 1. Sales Analisis in the USA. [see on Public Tableau](https://public.tableau.com/shared/BDRS2R2TM?:display_count=n&:origin=viz_share_link)
+![](images/Tableau_sales_USA.png)
+
+### 2. Analysis of Sales and Profitability in EU. [see on Public Tableau](https://public.tableau.com/views/BautistaAXB12940-Final/Q6AXB12940Story?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![](images/Tableau_Sales_EU.png)
+
+### 3. Customer Segmentation in the UK. [see on Public Tableau](https://public.tableau.com/views/CustomerSegmentationUK_17389682375610/Story1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![](images/Tableau_Cust_segm_UK.png)
+
+### 4. World Tertiary Education, STEM vs non STEM. [see on Public Tableau](https://public.tableau.com/shared/DSP866RS6?:display_count=n&:origin=viz_share_link)
+![](images/Tableau_Tertiary_Edu.png)
+---
 # Project 1: Data Engineering (GCP)
 ---
 This is a project I did for ETL in Google Clousd Platform.<br>
@@ -169,19 +191,6 @@ tw_list_neutral = tw_list[tw_list["sentiment"]=="neutral"]
 ### Negative Sentiment for word: "UCM"
 ![](images/Twitter_negative_sentiment.png)
 
----
-# Project 4: Data Visualization with Tableau
----
-### 1. Sales Analisis in the USA. [see on Public Tableau](https://public.tableau.com/shared/BDRS2R2TM?:display_count=n&:origin=viz_share_link)
-![](images/Tableau_sales_USA.png)
 
-### 2. Analysis of Sales and Profitability in EU. [see on Public Tableau](https://public.tableau.com/views/BautistaAXB12940-Final/Q6AXB12940Story?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-![](images/Tableau_Sales_EU.png)
-
-### 3. Customer Segmentation in the UK. [see on Public Tableau](https://public.tableau.com/views/CustomerSegmentationUK_17389682375610/Story1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-![](images/Tableau_Cust_segm_UK.png)
-
-### 4. World Tertiary Education, STEM vs non STEM. [see on Public Tableau](https://public.tableau.com/shared/DSP866RS6?:display_count=n&:origin=viz_share_link)
-![](images/Tableau_Tertiary_Edu.png)
 
 
