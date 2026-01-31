@@ -21,6 +21,8 @@ Technologies: Tableau, SQL, Excel.
 
 ### 4. World Tertiary Education, STEM vs non STEM. [see on Public Tableau](https://public.tableau.com/shared/DSP866RS6?:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_Tertiary_Edu.png)
+&nbsp;
+
 ---
 # Project 2: Data Pipeline & Analytics on GCP
 ---
@@ -149,6 +151,7 @@ print("F1Score",lr_metric.fMeasure(1.0))
 ### Heatmap
 ![](images/blood_donor_heatmap.png)
 &nbsp;
+
 ---
 # Project 4: Text Analytics & Sentiment Analysis
 ---
