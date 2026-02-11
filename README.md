@@ -23,7 +23,7 @@ Technologies: Tableau, SQL, Excel.
 ![](images/Tableau_Tertiary_Edu.png)
 &nbsp;
 
-### 5. Analysis of Sales and Profitability. [see on Power BI]([https://public.tableau.com/shared/DSP866RS6?:display_count=n&:origin=viz_share_link](https://app.powerbi.com/view?r=eyJrIjoiY2Q5NzA4ZmMtNTZmOC00Zjc3LTljMzctMmI2MzVkM2IyNDFhIiwidCI6IjdhZmI5ZTIyLTkzMDgtNDE4Ni04ZTI5LWVhMjMxZmYzYmFmNyIsImMiOjN9))
+### 5. Analysis of Sales and Profitability. [see on Power BI](https://app.powerbi.com/view?r=eyJrIjoiY2Q5NzA4ZmMtNTZmOC00Zjc3LTljMzctMmI2MzVkM2IyNDFhIiwidCI6IjdhZmI5ZTIyLTkzMDgtNDE4Ni04ZTI5LWVhMjMxZmYzYmFmNyIsImMiOjN9)
 ![](images/Tableau_Tertiary_Edu.png)
 &nbsp;
 
