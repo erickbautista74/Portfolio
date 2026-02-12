@@ -10,7 +10,7 @@ Developed interactive Tableau dashboards to analyze sales, profitability, and cu
 
 Technologies: Tableau, SQL, Excel.
 
-### 1. Sales Analisis in the USA. [see on Public Tableau](https://public.tableau.com/shared/BDRS2R2TM?:display_count=n&:origin=viz_share_link)
+### 1. Sales Analisis in the USA. [see on Public Tableau](https://public.tableau.com/views/AXB12940/Story1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_sales_USA.png)
 
 ### 2. Analysis of Sales and Profitability in EU. [see on Public Tableau](https://public.tableau.com/views/BautistaAXB12940-Final/Q6AXB12940Story?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
@@ -19,7 +19,7 @@ Technologies: Tableau, SQL, Excel.
 ### 3. Customer Segmentation in the UK. [see on Public Tableau](https://public.tableau.com/views/CustomerSegmentationUK_17389682375610/Story1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_Cust_segm_UK.png)
 
-### 4. World Tertiary Education, STEM vs non STEM. [see on Public Tableau](https://public.tableau.com/shared/DSP866RS6?:display_count=n&:origin=viz_share_link)
+### 4. World Tertiary Education, STEM vs non STEM. [see on Public Tableau](https://public.tableau.com/views/WorldMap-6Disabilities/WorldMap-6Disabilities?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![](images/Tableau_Tertiary_Edu.png)
 &nbsp;
 
